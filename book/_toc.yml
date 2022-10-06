@@ -1,0 +1,11 @@
+format: jb-book
+root: welcome
+parts:
+  - caption: Introduction
+    chapters:
+    - file: getting_started
+    - file: primer
+
+  - caption: Week 01
+    chapters:
+    - file: week_01/01_Planetary_Energy_Balance

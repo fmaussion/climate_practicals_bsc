@@ -1,0 +1,14 @@
+name: climsys
+channels:
+  - conda-forge
+dependencies:
+  - numpy
+  - scipy
+  - matplotlib
+  - xarray
+  - dask
+  - cartopy
+  - netcdf4
+  - h5netcdf
+  - h5py
+  
