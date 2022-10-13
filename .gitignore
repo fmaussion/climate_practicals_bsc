@@ -2,8 +2,6 @@
 html/index.html
 .idea
 book/_build/
-*_solutions.ipynb
-*_Solutions.ipynb
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -108,5 +106,10 @@ ENV/
 .mypy_cache/
 
 # Specific
-book/week_05/ERA-Int-MonthlyAvg-4D-T.nc
+notebooks/ERA-Int-MonthlyAvg-4D-T.nc
+book/data
+topo.png
+topo.pdf
+*_Solution_*.ipynb
 .virtual_documents
+
