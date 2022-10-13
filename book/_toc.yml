@@ -9,7 +9,7 @@ parts:
 
   - caption: Week 01
     chapters:
-    - file: week_01/01_Planetary_Energy_Balance
+    - file: week_01/01_Assignment_Planetary_Energy_Balance
 
   - caption: Week 02
     chapters:
