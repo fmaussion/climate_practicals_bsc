@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Assignment: CERES data &#8212; Climate System - Practicals</title>
+    <title>Group project: the Climate System &#8212; Climate System - Practicals</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -55,8 +55,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Lesson: more tools for statistical and climatological analysis" href="../week_03/01_Lesson_MoreDataCrunching.html" />
-    <link rel="prev" title="Lesson: working with netCDF data" href="01_Lesson_NetCDF_Data.html" />
+    <link rel="prev" title="Lesson: more tools for statistical and climatological analysis" href="../week_03/01_Lesson_MoreDataCrunching.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -165,14 +164,14 @@ const thebe_selector_output = ".output, .cell_output"
   Week 02
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="01_Lesson_NetCDF_Data.html">
+  <a class="reference internal" href="../week_02/01_Lesson_NetCDF_Data.html">
    Lesson: working with netCDF data
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_02/02_Assignment_CERES_data.html">
    Assignment: CERES data
   </a>
  </li>
@@ -194,9 +193,9 @@ const thebe_selector_output = ".output, .cell_output"
   Projects
  </span>
 </p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../projects/projects.html">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Group project: the Climate System
   </a>
  </li>
@@ -259,7 +258,7 @@ title="Toggle navigation"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://mybinder.org/v2/gh/fmaussion/climate_practicals_bsc/master?urlpath=lab/tree/book/week_02/02_Assignment_CERES_data.ipynb"
+        <a href="https://mybinder.org/v2/gh/fmaussion/climate_practicals_bsc/master?urlpath=lab/tree/book/projects/projects.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -319,7 +318,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/fmaussion/climate_practicals_bsc/issues/new?title=Issue%20on%20page%20%2Fweek_02/02_Assignment_CERES_data.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/fmaussion/climate_practicals_bsc/issues/new?title=Issue%20on%20page%20%2Fprojects/projects.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -336,7 +335,7 @@ title="Open an issue"
       </li>
       
       <li>
-        <a href="https://github.com/fmaussion/climate_practicals_bsc/edit/master/book/week_02/02_Assignment_CERES_data.ipynb"
+        <a href="https://github.com/fmaussion/climate_practicals_bsc/edit/master/book/projects/projects.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -364,7 +363,7 @@ title="Edit this page"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/week_02/02_Assignment_CERES_data.ipynb"
+        <a href="../_sources/projects/projects.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -424,43 +423,38 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#importing-the-modules">
-   Importing the modules
+  <a class="reference internal nav-link" href="#instructions">
+   Instructions
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#toa-fluxes">
-   TOA fluxes
+  <a class="reference internal nav-link" href="#part-1-temperature-climatology">
+   Part 1 - temperature climatology
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#albedo">
-     Albedo
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#longwave-outgoing-radiation">
-     Longwave outgoing radiation
-    </a>
-   </li>
-  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#surface-fluxes">
-   Surface fluxes
+  <a class="reference internal nav-link" href="#part-2-precipitation-climatology">
+   Part 2 - Precipitation climatology
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#surface-albedo">
-     Surface albedo
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#surface-energy-balance">
-     Surface energy balance
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-3-sea-level-pressure-and-surface-winds">
+   Part 3: sea-level pressure and surface winds
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-4-temperature-change-and-co-2-concentrations">
+   Part 4: temperature change and CO
+   <span class="math notranslate nohighlight">
+    \(_2\)
+   </span>
+   concentrations
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-5-variability-and-enso-open-research-question">
+   Part 5: variability and ENSO (open research question)
+  </a>
  </li>
 </ul>
 
@@ -471,7 +465,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Assignment: CERES data</h1>
+                <h1>Group project: the Climate System</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -482,43 +476,38 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#importing-the-modules">
-   Importing the modules
+  <a class="reference internal nav-link" href="#instructions">
+   Instructions
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#toa-fluxes">
-   TOA fluxes
+  <a class="reference internal nav-link" href="#part-1-temperature-climatology">
+   Part 1 - temperature climatology
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#albedo">
-     Albedo
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#longwave-outgoing-radiation">
-     Longwave outgoing radiation
-    </a>
-   </li>
-  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#surface-fluxes">
-   Surface fluxes
+  <a class="reference internal nav-link" href="#part-2-precipitation-climatology">
+   Part 2 - Precipitation climatology
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#surface-albedo">
-     Surface albedo
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#surface-energy-balance">
-     Surface energy balance
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-3-sea-level-pressure-and-surface-winds">
+   Part 3: sea-level pressure and surface winds
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-4-temperature-change-and-co-2-concentrations">
+   Part 4: temperature change and CO
+   <span class="math notranslate nohighlight">
+    \(_2\)
+   </span>
+   concentrations
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-5-variability-and-enso-open-research-question">
+   Part 5: variability and ENSO (open research question)
+  </a>
  </li>
 </ul>
 
@@ -530,18 +519,32 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="assignment-ceres-data">
-<h1>Assignment: CERES data<a class="headerlink" href="#assignment-ceres-data" title="Permalink to this headline">#</a></h1>
-<p>To solve the following exercises you can copy and paste code from the previous notebook. The code modifications required to solve the exercises are minimal (e.g. changing the name of a variable, add a small computation…): don’t think too “complicated”!</p>
-<section id="importing-the-modules">
-<h2>Importing the modules<a class="headerlink" href="#importing-the-modules" title="Permalink to this headline">#</a></h2>
-<p>This one is easy. I’ll do it for you:</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="group-project-the-climate-system">
+<h1>Group project: the Climate System<a class="headerlink" href="#group-project-the-climate-system" title="Permalink to this headline">#</a></h1>
+<section id="instructions">
+<h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">#</a></h2>
+<p><strong>Objectives</strong></p>
+<p>In this final project, you will apply the methods you learned over the past weeks to answer the questions below.</p>
+<p><strong>Deadline</strong></p>
+<p>Please submit your project via OLAT before <strong>Thursday January 12 at 00H</strong> (in the night from Wednesday to Thursday).</p>
+<p><strong>Formal requirements</strong></p>
+<p>You will work in groups of two. If we are an odd number of students, one group can have three participants. <em>(Tip: I recommend that students who have not followed my programming class to team up with students who have)</em>.</p>
+<p>Each group will submit one (executed) jupyter notebook containing the code, plots, and answers to the questions (text in the markdown format). Please also submit an HTML version of the notebook. Each group member must contribute to the notebook. The notebook should be self-contained and the answers must be well structured. The plots must be as understandable as possible (title, units, x and y axis labels, appropriate colors and levels…).</p>
+<p>Please be concise in your answer. I expect a few sentences per answer at most - there is no need to write a new text book in this project! Use links and references to the literature or your class slides where appropriate.</p>
+<p><strong>Grading</strong></p>
+<p>I will give one grade per project, according to the following table (total 10 points):</p>
+<ul class="simple">
+<li><p>correctness of the code and the plots: content, legends, colors, units, etc. (3 points)</p></li>
+<li><p>quality of the answers: correctness, preciseness, appropriate use of links and references to literature or external resources (5 points)</p></li>
+<li><p>originality and quality of the open research question (2 points)</p></li>
+</ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import the tools we are going to need today:</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>  <span class="c1"># plotting library</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>  <span class="c1"># numerical library</span>
 <span class="kn">import</span> <span class="nn">xarray</span> <span class="k">as</span> <span class="nn">xr</span>  <span class="c1"># netCDF library</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>  <span class="c1"># tabular library</span>
 <span class="kn">import</span> <span class="nn">cartopy</span>  <span class="c1"># Map projections libary</span>
 <span class="kn">import</span> <span class="nn">cartopy.crs</span> <span class="k">as</span> <span class="nn">ccrs</span>  <span class="c1"># Projections list</span>
 <span class="c1"># Some defaults:</span>
@@ -551,120 +554,134 @@ title="Print to PDF"
 </div>
 </div>
 </section>
-<section id="toa-fluxes">
-<h2>TOA fluxes<a class="headerlink" href="#toa-fluxes" title="Permalink to this headline">#</a></h2>
-<p>Read the TOA dataset we used during the lesson. Do you remember all variables it contains?</p>
+<section id="part-1-temperature-climatology">
+<h2>Part 1 - temperature climatology<a class="headerlink" href="#part-1-temperature-climatology" title="Permalink to this headline">#</a></h2>
+<p>Open the ERA5 temperature data:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ds</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="s1">&#39;../data/ERA5_LowRes_Monthly_t2m.nc&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
-<section id="albedo">
-<h3>Albedo<a class="headerlink" href="#albedo" title="Permalink to this headline">#</a></h3>
-<p>Compute the climatological mean of clear-sky planetary albedo <span class="math notranslate nohighlight">\(\overline{\alpha_{P_{clr}}}\)</span> and plot it on a map. Analyse the plot.</p>
+<p>Plot three global maps:</p>
+<ul class="simple">
+<li><p>Compute and plot the temporal mean temperature <span class="math notranslate nohighlight">\(\overline{T}\)</span> for the entire period (unit °C)</p></li>
+<li><p>Compute and plot <span class="math notranslate nohighlight">\(\overline{T^{*}}\)</span> (see lesson), the zonal anomaly map of average temperature.</p></li>
+<li><p>Compute and plot the monthly average temperature for each month <span class="math notranslate nohighlight">\(\overline{T_M}\)</span> (annual cycle). I expect a variable of dimensions (month: 12, latitude: 241, longitude: 480). <em>Hint: remember the <code class="docutils literal notranslate"><span class="pre">.groupby()</span></code> command we learned in the lesson.</em> Now plot the average monthly temperature range, i.e. <span class="math notranslate nohighlight">\(\overline{T_M}max\)</span> - <span class="math notranslate nohighlight">\(\overline{T_M}min\)</span> on a map.</p></li>
+</ul>
+<p><strong>Questions</strong>:</p>
+<ol class="simple">
+<li><p>Look at the zonal temperature anomaly map.</p>
+<ul class="simple">
+<li><p>Explain why norther Europe and the North Atlantic region is significantly warmer than the same latitudes in North America or Russia.</p></li>
+<li><p>Explain why the Northern Pacific Ocean does not have a similar pattern.</p></li>
+</ul>
+</li>
+<li><p>Look at the average monthly temperature range map.</p>
+<ul class="simple">
+<li><p>Explain why the temperature range is smaller in the tropics than at higher latitudes</p></li>
+<li><p>Explain why the temperature range is smaller over oceans than over land</p></li>
+<li><p>Where is the temperature range largest? Explain why.</p></li>
+</ul>
+</li>
+</ol>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p>Repeat the operation with all-sky planetary albedo <span class="math notranslate nohighlight">\(\overline{\alpha_{P_{all}}}\)</span>. Where are the largest differences? Can you plot the difference between the two on a map, too?</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p>Now plot the zonal, climatological means <span class="math notranslate nohighlight">\(\left[ \overline{\alpha_{P_{all}}} \right]\)</span> and <span class="math notranslate nohighlight">\(\left[ \overline{\alpha_{P_{clr}}} \right]\)</span> on the same plot. Add a legend to it!</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p>Compute the global average of <span class="math notranslate nohighlight">\(\overline{\alpha_{P_{all}}}\)</span> and <span class="math notranslate nohighlight">\(\overline{\alpha_{P_{clr}}}\)</span> (remember to weight according to latitude!). Compare the values you obtain with the ones we mentioned in the lecture.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answers here</span>
 </pre></div>
 </div>
 </div>
 </div>
 </section>
-<section id="longwave-outgoing-radiation">
-<h3>Longwave outgoing radiation<a class="headerlink" href="#longwave-outgoing-radiation" title="Permalink to this headline">#</a></h3>
-<p>Repeat the operations above with <span class="math notranslate nohighlight">\(LW_{all} \)</span> and  <span class="math notranslate nohighlight">\(LW_{clr}\)</span> (i.e.: maps of <span class="math notranslate nohighlight">\(\overline{LW_{all}}\)</span>, <span class="math notranslate nohighlight">\(\overline{LW_{clr}}\)</span>, line plots of <span class="math notranslate nohighlight">\(\left[ \overline{LW_{all}} \right]\)</span>, <span class="math notranslate nohighlight">\(\left[ \overline{LW_{clr}} \right]\)</span>). What is the global effect of clouds on outgoing longwave radiation?</p>
+<section id="part-2-precipitation-climatology">
+<h2>Part 2 - Precipitation climatology<a class="headerlink" href="#part-2-precipitation-climatology" title="Permalink to this headline">#</a></h2>
+<p>Open the precipitation file and explore it. The units of monthly precipitation are wrongly labeled (unfortunately). They should read: <strong>m per day</strong>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ds</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="s1">&#39;../data/ERA5_LowRes_Monthly_tp.nc&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Using <code class="docutils literal notranslate"><span class="pre">.groupby()</span></code>, compute the average daily precipitation for each month of the year (I expect a variable of dimensions (month: 12, latitude: 241, longitude: 480)). Convert the units to <strong>mm per day</strong>. Plot a map of average daily precipitation in January and in August with the levels <code class="docutils literal notranslate"><span class="pre">[0.5,</span> <span class="pre">1,</span> <span class="pre">2,</span> <span class="pre">3,</span> <span class="pre">4,</span> <span class="pre">5,</span> <span class="pre">7,</span> <span class="pre">10,</span> <span class="pre">15,</span> <span class="pre">20,</span> <span class="pre">40]</span></code> and the colormap `YlGnBu’</p>
+<p><strong>Questions</strong>:</p>
+<ol class="simple">
+<li><p>Describe the location of the ITCZ in January and February. Without going into the details, explain (in one or two sentences)</p></li>
+<li><p>Describe the precipitation seasonality in West Africa and in India. Name the phenomenon at play.</p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answers here</span>
 </pre></div>
 </div>
 </div>
 </div>
 </section>
-</section>
-<section id="surface-fluxes">
-<h2>Surface fluxes<a class="headerlink" href="#surface-fluxes" title="Permalink to this headline">#</a></h2>
-<p>Now open the EBAF-Surface dataset, available for download from the <a class="reference external" href="http://fabienmaussion.info/climate_practicals_bsc/download.html">download page</a>.</p>
+<section id="part-3-sea-level-pressure-and-surface-winds">
+<h2>Part 3: sea-level pressure and surface winds<a class="headerlink" href="#part-3-sea-level-pressure-and-surface-winds" title="Permalink to this headline">#</a></h2>
+<p>Open the file containing the surface winds (<code class="docutils literal notranslate"><span class="pre">u10</span></code> and <code class="docutils literal notranslate"><span class="pre">v10</span></code>) and sea-level pressure (<code class="docutils literal notranslate"><span class="pre">msl</span></code>).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ds</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="s1">&#39;../data/ERA5_LowRes_MonthlyAvg_uvslp.nc&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
-<section id="surface-albedo">
-<h3>Surface albedo<a class="headerlink" href="#surface-albedo" title="Permalink to this headline">#</a></h3>
-<p>Compute the all-sky surface albedo <span class="math notranslate nohighlight">\(\overline{\alpha_{S_{all}}}\)</span>. Plot it on a map.</p>
+<p>Compute <span class="math notranslate nohighlight">\(\left[ \overline{SLP} \right]\)</span> (the temporal and zonal average of sea-level pressure). Convert it to hPa, and plot it (line plot). With the help of <a class="reference external" href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.axhline">plt.axhline</a>, add the <a class="reference external" href="https://en.wikipedia.org/wiki/Atmospheric_pressure#Standard_atmospheric">standard atmosphere pressure</a> line to the plot to emphasize high and low pressure regions. Repeat with <span class="math notranslate nohighlight">\(\left[ \overline{u_{10}} \right]\)</span> and <span class="math notranslate nohighlight">\(\left[ \overline{v_{10}} \right]\)</span> (in m s<span class="math notranslate nohighlight">\(^{-1}\)</span>) and add the 0 horizontal line to the plot (to detect surface westerlies from easterlies for example).</p>
+<p><strong>Questions</strong>:</p>
+<ol class="simple">
+<li><p>Based on your knowledge about the general circulation of the atmosphere, explain the latitude location of the climatological high and low pressure systems of Earth.</p></li>
+<li><p>Similarly, explain the direction and strength of the zonal and meridional winds on earth (<em>tip: the sea-level pressure plot helps</em>)</p></li>
+</ol>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p>Compute the global average of <span class="math notranslate nohighlight">\(\overline{\alpha_{s}}\)</span>.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answers here</span>
 </pre></div>
 </div>
 </div>
 </div>
 </section>
-<section id="surface-energy-balance">
-<h3>Surface energy balance<a class="headerlink" href="#surface-energy-balance" title="Permalink to this headline">#</a></h3>
-<p>Now compute the net surface energy intake <span class="math notranslate nohighlight">\(\overline{SEB} =  \overline{SW_{in}} - \overline{SW_{out}} + \overline{LW_{in}} - \overline{LW_{out}}\)</span>. Plot it on a map and analyse your results. Where does the surface gain most energy? Is the net radiative energy a gain or a loss for the surface of the globe?</p>
+<section id="part-4-temperature-change-and-co-2-concentrations">
+<h2>Part 4: temperature change and CO<span class="math notranslate nohighlight">\(_2\)</span> concentrations<a class="headerlink" href="#part-4-temperature-change-and-co-2-concentrations" title="Permalink to this headline">#</a></h2>
+<p>Download the <a class="reference external" href="https://gml.noaa.gov/webdata/ccgg/trends/co2/co2_mm_gl.csv">global average CO<span class="math notranslate nohighlight">\(_2\)</span> concentration timeseries</a> data in the CSV format (source: <a class="reference external" href="https://gml.noaa.gov/ccgg/trends/gl_data.html">NOAA</a>). Here, let me help your read them using pandas:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;co2_mm_gl.csv&#39;</span><span class="p">,</span> <span class="n">skiprows</span><span class="o">=</span><span class="mi">55</span><span class="p">,</span> <span class="n">parse_dates</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;date&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]},</span> <span class="n">index_col</span><span class="o">=</span><span class="s1">&#39;date&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
-<p>Compute the global averages of each term and compare them to the values we discussed in the lecture (<a class="reference external" href="https://www.cgd.ucar.edu/staff/trenbert/trenberth.papers/BAMSmarTrenberth.pdf">ref</a>). For reference, here is the figure again:</p>
-<a class="reference internal image-reference" href="http://www.skepticalscience.com/pics/Figure1.png"><img alt="http://www.skepticalscience.com/pics/Figure1.png" src="http://www.skepticalscience.com/pics/Figure1.png" style="width: 50%;" /></a>
+<p>Prepare three plots:</p>
+<ul class="simple">
+<li><p>plot the monthly global CO<span class="math notranslate nohighlight">\(_2\)</span> concentration as a function of time.</p></li>
+<li><p>plot the annual average timeseries of global CO<span class="math notranslate nohighlight">\(_2\)</span> concentration as a function of time.</p></li>
+<li><p>plot the annual average timeseries of global CO<span class="math notranslate nohighlight">\(_2\)</span> concentration and of global 2m temperature from ERA5 on the same plot (using a secondary y axis for temperature).</p></li>
+</ul>
+<p><strong>Questions</strong>:</p>
+<ol class="simple">
+<li><p>Describe and explain the annual cycle of CO<span class="math notranslate nohighlight">\(_2\)</span> concentrations</p></li>
+<li><p>What was the CO<span class="math notranslate nohighlight">\(_2\)</span> concentration in the atmosphere in the pre-industrial era? Compute the annual increase in CO<span class="math notranslate nohighlight">\(_2\)</span> concentration (unit: ppm per year) between 1980 and 1985 and between 2016 and 2021.</p></li>
+<li><p>Describe the relationship between global temperatures and CO<span class="math notranslate nohighlight">\(_2\)</span> concentrations. Beside CO<span class="math notranslate nohighlight">\(_2\)</span>, name three processes that can influence temperature variability and change at the global scale.</p></li>
+</ol>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p><strong>Discuss the processes that will counterbalance this net radiative energy imbalance, in the oceans and on land! Also discuss the differences between your results and the plot above.</strong> (Careful literature search might lead you to more recent estimates of the budget if you are interested).</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answer here</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answers here</span>
 </pre></div>
 </div>
 </div>
 </div>
 </section>
+<section id="part-5-variability-and-enso-open-research-question">
+<h2>Part 5: variability and ENSO (open research question)<a class="headerlink" href="#part-5-variability-and-enso-open-research-question" title="Permalink to this headline">#</a></h2>
+<p>Using the <a class="reference external" href="http://fabienmaussion.info/climate_practicals_bsc/download.html">available data</a>, describe the global effect of an El Niño year and a La Niña year on sea-surface temperature, precipitation, and air temperature. I suggest to look for literature or a google search on strong ENSO events in the past 40 years, and select one good example for a positive and a negative phase. Then use annual or seasonal anomaly maps to show the patterns of SST, temperature and precipitation anomalies during these events. With citation or links, explain why you picked these years as examples.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your answers here</span>
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 </section>
 
@@ -681,7 +698,7 @@ title="Print to PDF"
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./week_02"
+            path: "./projects"
         },
         predefinedOutput: true
     }
@@ -695,19 +712,12 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="01_Lesson_NetCDF_Data.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="../week_03/01_Lesson_MoreDataCrunching.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Lesson: working with netCDF data</p>
+            <p class="prev-next-title">Lesson: more tools for statistical and climatological analysis</p>
         </div>
-    </a>
-    <a class='right-next' id="next-link" href="../week_03/01_Lesson_MoreDataCrunching.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Lesson: more tools for statistical and climatological analysis</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             </footer>
